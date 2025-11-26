@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lumina - Neomorphism Design System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              neu: {
+                base: '#E0E5EC',
+                light: '#ffffff',
+                dark: '#A3B1C6',
+                text: {
+                  primary: '#4A5568',
+                  secondary: '#718096',
+                  tertiary: '#A0AEC0'
+                },
+                accent: {
+                  blue: '#6C7FDD',
+                  purple: '#9B8FDD',
+                  pink: '#E89BB5',
+                  green: '#7FDD9E'
+                }
+              }
+            },
+            boxShadow: {
+              'neu-raised': '9px 9px 16px rgb(163 177 198 / 0.6), -9px -9px 16px rgb(255 255 255 / 0.5)',
+              'neu-pressed': 'inset 6px 6px 10px rgb(163 177 198 / 0.47), inset -6px -6px 10px rgb(255 255 255 / 1)',
+              'neu-flat': '5px 5px 10px rgb(163 177 198 / 0.4), -5px -5px 10px rgb(255 255 255 / 0.4)',
+              'neu-icon-raised': '5px 5px 10px rgb(163 177 198 / 0.6), -5px -5px 10px rgb(255 255 255 / 0.5)',
+              'neu-icon-pressed': 'inset 3px 3px 6px rgb(163 177 198 / 0.6), inset -3px -3px 6px rgb(255 255 255 / 0.5)',
+            },
+            textShadow: {
+              'neu-emboss': '1px 1px 1px rgba(255, 255, 255, 0.8), -1px -1px 1px rgba(163, 177, 198, 0.3)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #E0E5EC;
+        color: #4A5568;
+        -webkit-font-smoothing: antialiased;
+      }
+      /* Custom Range Slider Styling for Neomorphism */
+      input[type=range] {
+        -webkit-appearance: none;
+        background: transparent;
+      }
+      input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 24px;
+        width: 24px;
+        border-radius: 50%;
+        background: #E0E5EC;
+        margin-top: -8px;
+        box-shadow: 5px 5px 10px rgb(163 177 198 / 0.6), -5px -5px 10px rgb(255 255 255 / 0.5);
+        cursor: pointer;
+      }
+      input[type=range]::-moz-range-thumb {
+        height: 24px;
+        width: 24px;
+        border-radius: 50%;
+        background: #E0E5EC;
+        border: none;
+        box-shadow: 5px 5px 10px rgb(163 177 198 / 0.6), -5px -5px 10px rgb(255 255 255 / 0.5);
+        cursor: pointer;
+      }
+      .embossed-text {
+        text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8), -1px -1px 1px rgba(163, 177, 198, 0.3);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
